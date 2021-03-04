@@ -7,12 +7,6 @@ int main(){
 		scanf("%c",&que[l]);
 	}
 	chk=strlen(que);
-	for(j=0;j<chk;j++)
-	{
-		if(que[j]==sp){
-			return 0;
-		}
-	}
 	c_ch=que[0];
 	printf("%c",que[0]);
 	for(i=0;i<chk-1;i++){
