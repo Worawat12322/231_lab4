@@ -67,5 +67,6 @@ int main(){
 		shuff[1][1]=4;
 	}
 	}
+	else return 0;
 	return 0;
 }
