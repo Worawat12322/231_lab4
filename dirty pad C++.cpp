@@ -2,14 +2,17 @@
 #include<string.h>
 int main(){
 	int chk,i,l;
-	char que[200],c_ch;
+	char que[200],c_ch,space;
 	for(l=0;l<200;l++){
 		scanf("%c",&que[l]);
-		if(que[l]==32)
-		{
-			return 0;
-		}
 	}
+	space = strstr(que," ");
+	if(space)
+	{
+		return 0;
+	}
+	else
+	{
 	chk=strlen(que);
 	c_ch=que[0];
 	printf("%c",que[0]);
@@ -19,6 +22,7 @@ int main(){
 			c_ch=que[i+1];
 			printf("%c",c_ch);
 		}
+	}
 	}
 	return 0;
 }
