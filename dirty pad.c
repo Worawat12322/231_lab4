@@ -3,7 +3,7 @@
 int main(){
 	int chk,i;
 	char que[200],c_ch;
-	gets(que);
+	
 	chk=strlen(que);
 	c_ch=que[0];
 	printf("%c",que[0]);
