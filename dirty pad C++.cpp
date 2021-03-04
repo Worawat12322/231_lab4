@@ -1,19 +1,18 @@
 #include<stdio.h>
 #include<string.h>
 int main(){
-	int chk,i,l;
-	char que[200],c_ch,space;
+	int chk,i,l,j;
+	char que[200],c_ch,sp=' ';
 	for(l=0;l<200;l++){
 		scanf("%c",&que[l]);
 	}
-	space = strstr(que," ");
-	if(space)
-	{
-		return 0;
-	}
-	else
-	{
 	chk=strlen(que);
+	for(j=0;j<chk;j++)
+	{
+		if(que[j]==sp){
+			return 0;
+		}
+	}
 	c_ch=que[0];
 	printf("%c",que[0]);
 	for(i=0;i<chk-1;i++){
@@ -22,7 +21,6 @@ int main(){
 			c_ch=que[i+1];
 			printf("%c",c_ch);
 		}
-	}
 	}
 	return 0;
 }
