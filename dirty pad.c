@@ -2,6 +2,7 @@
 #include<string.h>
 int main(){
 	char que[200];
-	return 0;
+	gets(que);
 	
+	return 0;
 }
