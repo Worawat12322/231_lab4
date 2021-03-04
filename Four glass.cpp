@@ -2,10 +2,11 @@
 #include<string.h>
 int main(){
 	int shuff[2][2]={{1,2},{3,4}};
-	int num,i,l,tmp;
+	int num,i,l,tmp,leg;
 	int a,b;
 	scanf("%d",&num);
-	char move[num][50];
+	char move[num][50]={0};
+		fflush(stdin);
 	if(num>0&&num<100)
 	{
 	for(i=0;i<num;i++)
@@ -15,10 +16,9 @@ int main(){
 			scanf("%c",&move[i][l]);
 		}
 	}
-
 	for(a=0;a<num;a++)
 	{
-		for(b=0;b<strlen(move[a]);b++)
+		for(b=0;move[a][b]!=0;b++)
 		{
 			if(move[a][b]=='A')
 			{
